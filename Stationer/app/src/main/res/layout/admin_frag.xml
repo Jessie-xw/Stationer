@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Box Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/box_title"
+            android:text="账号登录"
+            android:textSize="14sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="3dp"/>
+
+        <!-- Account box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_border"
+            android:padding="3dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="账号"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEE"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/account_admin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <!-- Password box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/bg_border"
+            android:padding="3dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="密码"
+                android:gravity="center_vertical"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#EEE"/>
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/password_admin"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:background="@null"/>
+        </LinearLayout>
+
+        <!-- Sign-in button -->
+        <Button
+            android:id="@+id/login_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
